@@ -1,5 +1,3 @@
-# Four Star
-
 1. this에 관해 설명하시오.
 
 2. local storage(브라우저 저장소)에 관해 설명하시오.
