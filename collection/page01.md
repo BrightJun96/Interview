@@ -111,6 +111,20 @@ POST는 데이터를 Body에 담아 보내 데이터가 보이지 않다는 점�
 
 ## 7. http와 https 차이
 
+http는 웹으로 비추어보았을 때, 클라이언트와 서버가 통신할 수 있도록 하는 프로토콜이다.
+프로토콜이란 통신을 위한 규약을 말한다.
+http는 html와 같은 여러 가지 리소스등을 교환할 수 있게 해준다.
+
+https는 http의 보안성이 보장된 버전이다.
+https위에서 클라이언트와 서버는 안전하게 데이터를 교환할 수 있으며 보안성을 위해 TLS와 SSL을 사용한다.
+
+**Reference**
+
+- https://developer.mozilla.org/en-US/docs/Glossary/Protocol
+- https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview
+- https://developer.mozilla.org/en-US/docs/Glossary/https
+- https://developer.mozilla.org/en-US/docs/Glossary/SSL
+
 ## 8. ajax에 관해 설명하시오.
 
 ## 9.라이브러리와 프레임워크의 차이

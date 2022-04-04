@@ -45,17 +45,21 @@ promise 객체를 반환하는 async/await 키워드를 사용하여 동기적�
 
 ## 10. Cors와 Cors오류를 해결하기 위한 방법
 
-CORS는 서로 다른 origin으로 네트워크 요청을 하여도 리소스를 응답받을 수 있도록 하며 이에 대한 정책을 규정한 기능이다.
+CORS는 서로 다른 origin으로 네트워크 요청을 하여도 CORS 규칙을 지킨다면 리소스를 응답받을 수 있도록 하며 이에 대한 정책을 규정한 기능이다.
 
-이 때 요청을 보내는 측에서 헤더 설정을 제대로 해주지 않거나 서버에서 허용 origin 설정(Access-Control-Allow-Origin)을 제대로 해주지 않았다면 CORS에러가 발생할 수 있다.
+이 때 서버에서 허용 origin 설정(Access-Control-Allow-Origin)을 제대로 해주지 않았다면 CORS에러가 발생할 수 있다.
 
-때문에 해당 에러를 해결하기 위해서는 요청측에서 헤더 설정을 알맞게 해주거나 서버에서 허용 origin을 알맞게 해주면 된다.(예)Access-Control-Allow-Origin: https://requestorigin.com)
+때문에 해당 에러를 해결하기 위해서는 서버에서 허용 origin을 알맞게 해주면 된다.(예)Access-Control-Allow-Origin: https://requestorigin.com)
 
 다른 방법은 웹팩 개발 서버에서 proxy기능을 사용하는 방법이 있다.
 proxy로 요청을 보내고자하는 서버를 입력해주면 나의 개발 서버로 요청을 보냈을 때 proxy가 대신하여 요청을 보내고자하는 서버에 요청을 보내고 응답을 받아 전달해준다.
-
+(다만 proxy 설정 서버가 production모드인 경우 해결이 안될 수 있으니 로컬 서버로 설정할 경우에 사용하는 것이 좋다.
+production 모드에서도 사용하고 싶다면 client orgin과 server origin이 같은 경우에 사용하는 것이 권장된다.)
+)
 **Reference**
 
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#the_http_request_headers
 
 - https://evan-moon.github.io/2020/05/21/about-cors/#simple-request
+
+- https://stackoverflow.com/questions/52877492/proxy-not-working-for-create-react-app-in-production
