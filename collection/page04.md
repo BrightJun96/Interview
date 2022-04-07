@@ -19,6 +19,16 @@ redux는 이러한 상황일 때에 상태값을 필요한 부분에 가져다 �
 
 ## redux saga와 redux thunk를 어떠한 상황에 적절히 사용하면 되는 것인가?
 
+redux-thunk는 특별한 선언없이 사용할 수 있다.
+redux-saga는 thunk에 비해 셋업이 필요하다는 단점이 있다.
+
+단순한 비동기라면 saga를 쓰는 것을 선호한다.
+
+RTK안에서 비동기 로직때문에 미들웨어를 사용하는 경우라면 redux-thunk를 사용하는것이 편하다.
+RTK는 redux-thunk를 default로 지원하기 때문에 미들웨어 셋업없이 thunk를 선언하여 사용하면 된다.
+
 ## react에서 state가 불변성을 유지해야하는 이유?
 
 ## Context API란?
+
+## react 18버전 업데이트된 내용이 뭔지 알고 있는지?

@@ -9,3 +9,5 @@
 5. Promise에 관해 설명하시오.
 
 6. async/await에 관해 설명하시오.
+
+7. fetch와 axios의 차이

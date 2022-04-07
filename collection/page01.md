@@ -125,7 +125,40 @@ https위에서 클라이언트와 서버는 안전하게 데이터를 교환할 
 - https://developer.mozilla.org/en-US/docs/Glossary/https
 - https://developer.mozilla.org/en-US/docs/Glossary/SSL
 
-## 8. ajax에 관해 설명하시오.
+## 8. ajax의 개념,탄생동기과 장단점
+
+- 개념
+- 탄생동기
+- 장단점
+- hmlhttprequest
+
+ajax란 자바스크립트를 사용하여 브라우저가 서버에게 비동기 방식으로 데이터를 요청하고,
+서버가 응답한 데이터를 수신하여 웹페이지를 동적으로 갱신하는 프로그래밍 방식이다.
+
+ajax등장이전에는 웹페이지가 데이터변경을 할 때에 html전체를 다시 요청하여 받아와 변경되지 않아도 되는 부분까지
+불필요하게 응답되어 새로고침과 같이 화면이 깜빡이는 비효율적인 단점이 있었다.
+
+또한 필요한 부분을 업로딩할 때마다 새로운 html을 제작해줘야되니 이 또한 비효율적이다.
+(예를 e-commerce 웹사이트로 비추어 보았을 때, 새로운 상품 등록을 할 때마다 그 상품하나 때문에 html을 새로 작성해야한다.
+뿐만 아니라 요즘같이 실시간으로 데이터가 업데이트되는 페이스북,인스타그램 등을 보았을 때도 ajax를 사용하지않는 정적웹이면
+짧은 시간동안 생성되는 데이터와 비례하여 해당 html문서를 생성해야한다는 것이다.)
+
+하지만 ajax는 필요한 데이터를 비동기적으로 받아와 필요한 부분을 업데이트 할 수 있다.
+따라서 필요한 부분만 부분적으로 업데이트되고, 변경될 필요가 없는 부분은 변경되지 않게 할 수 있다.
+
+다만 정적인 웹에서는 처리해야할 데이터가 적기 때문에 요청과 응답이 비교적 빠를 수 있지만
+ajax를 사용하는 동적인 웹은 정적인 웹에 비해 요청,응답이 비교적 느려 웹 업로딩이 느릴 수 있다는 단점도 있을 수 있다.
+
+ajax는 XMLHttpRequest를 기반으로 작동한다.  
+XMLHttpRequest는 http 비동기 통신을 위한 프로퍼티 및 메서드를 제공한다.
+이를 간편하게 사용할 수 있는 API로는 fetch 또는 라이브러리 ajax가 있다.
+이는 XML,json,txt,html 등 다양한 데이터 포멧을 주고 받는다.
+
+**reference**
+
+- https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX/Getting_Started
+- javascript deep dive
+- https://titus94.tistory.com/4
 
 ## 9.라이브러리와 프레임워크의 차이
 
