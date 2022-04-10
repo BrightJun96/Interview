@@ -199,3 +199,5 @@ https위에서 클라이언트와 서버는 안전하게 데이터를 교환할 
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview
 - https://developer.mozilla.org/en-US/docs/Glossary/https
 - https://developer.mozilla.org/en-US/docs/Glossary/SSL
+
+## CORS
