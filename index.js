@@ -12,3 +12,13 @@ console.log(increase());
 console.log(increase());
 console.log(increase());
 console.log(increase());
+
+const num = 3;
+
+const str = "jev";
+
+const bol = true;
+
+const nul = null;
+
+const und = undefined;
