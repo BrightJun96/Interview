@@ -204,3 +204,21 @@ RTK는 redux-thunk를 default로 지원하기 때문에 미들웨어 셋업없�
 - https://react.vlpt.us/redux-middleware/10-redux-saga.html
 
 ## react 18버전 업데이트된 내용이 뭔지 알고 있는지?
+
+- https://reactjs.org/blog/2022/03/08/react-18-upgrade-guide.html#updates-to-client-rendering-apis
+
+## react-query
+
+비동기적으로 받아오는 데이터를 전역적으로 상태 관리할 수 있게 해주는 라이브러리이다.
+
+기존에 redux로 비동기 통신을 하려 할 때는 store안에서 클라이언트측 상태와 비동기로 받아오는 상태를 모두 관리해줘야했다.  
+때문에 store안의 로직이 비대하고 복잡해지곤 했다.
+
+이에 대하여 리액트 쿼리는 비동기 통신으로 받아오는 데이터 상태값들을 스토어와 분리하여 작성할 수 있게 해준다.  
+store안에서가 아닌 클라이언트측에서 비동기 데이터 상태값을 **전역적으로**으로 관리해주어 기존에 store의 복잡성을 줄여주며  
+코드의 단을 분리해줄 수 있다.
+
+때문에 만약 비동기 통신을 하는 코드의 양이 많다면 리액트 쿼리를 도입하여 상태값을 클라이언트단과 서버단(server state)으로 분리하여  
+작성하는 것도 좋은 방법이라고 생각한다.
+
+- https://techblog.woowahan.com/6339/
