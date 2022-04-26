@@ -74,3 +74,22 @@ SSR의 경우에는 요청을 했을 때 이미 서버에서 해당 리소스들
 ## UI, UX
 
 ## SEO(Search Engine Optimization)
+
+## 웹 표준과 웹 접근성
+
+웹 표준
+
+- 웹에서 표준적으로 사용되는 기술이나 규칙
+- 웹 접근성에 준수하기 위해 따르는 기준
+
+웹 접근성  
+장애인,고령자 등 모든 사용자가 환경에 제약없이 웹 사이트에 모든 정보에 동등하게 접근할 수 있도록 하는 것
+
+- 웹을 반응형으로 디자인
+- 바벨, 웹팩을 사용하여 여러 브라우저에서 호환 가능하도록 만드는 것
+
+**Ref**
+
+- http://www.smartebiz.kr/new/subpage02_01.html
+- http://www.smartebiz.kr/new/subpage02_02.html
+- https://seulbinim.github.io/WSA/accessibility.html#%EC%9B%B9%EC%A0%91%EA%B7%BC%EC%84%B1%EC%9D%98-%EA%B0%9C%EC%9A%94

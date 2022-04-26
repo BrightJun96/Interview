@@ -22,18 +22,3 @@
 // const nul = null;
 
 // const und = undefined;
-
-let result;
-const asyncProcessFun = () => {
-  setTimeout(() => {
-    result = "Hello";
-  }, 3000);
-};
-
-function myfun(callback) {
-  callback();
-}
-
-myfun(asyncProcessFun);
-
-console.log(result);

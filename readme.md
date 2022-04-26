@@ -17,3 +17,5 @@
 - https://xiubindev.tistory.com/119
 
 - 자바스크립트 딥다이브
+
+- https://yohanpro.com/posts/programming/career/2
